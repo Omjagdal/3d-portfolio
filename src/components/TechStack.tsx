@@ -10,17 +10,18 @@ import {
   CylinderCollider,
   RapierRigidBody,
 } from "@react-three/rapier";
+import "./styles/TechStack.css";
 
 const textureLoader = new THREE.TextureLoader();
 const imageUrls = [
-  "/images/react2.webp",
-  "/images/next2.webp",
-  "/images/node2.webp",
-  "/images/express.webp",
-  "/images/mongo.webp",
+  "/images/python.png",
+  "/images/pytorch.png",
+  "/images/tensorflow.png",
+  "/images/docker.png",
+  "/images/aws.png",
+  "/images/langchain.png",
   "/images/mysql.webp",
-  "/images/typescript.webp",
-  "/images/javascript.webp",
+  "/images/python.png",
 ];
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
@@ -124,6 +125,46 @@ function Pointer({ vec = new THREE.Vector3(), isActive }: PointerProps) {
   );
 }
 
+const skillCategories = [
+  {
+    title: "Languages",
+    icon: "💻",
+    skills: ["Python", "C", "C++", "SQL"],
+  },
+  {
+    title: "ML / AI",
+    icon: "🧠",
+    skills: [
+      "Machine Learning",
+      "Deep Learning",
+      "YOLO",
+      "GenAI",
+      "RAG",
+    ],
+  },
+  {
+    title: "Frameworks",
+    icon: "⚡",
+    skills: ["PyTorch", "TensorFlow", "LangChain",
+      "LangGraph", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+  },
+  {
+    title: "Databases",
+    icon: "🗄️",
+    skills: ["MySQL", "Firebase"],
+  },
+  {
+    title: "Cloud & DevOps",
+    icon: "☁️",
+    skills: ["AWS EC2", "AWS Lambda", "SageMaker", "Docker", "MLflow"],
+  },
+  {
+    title: "Tools",
+    icon: "📊",
+    skills: ["Power BI", "Tableau", "Git", "VS Code"],
+  },
+];
+
 const TechStack = () => {
   const [isActive, setIsActive] = useState(false);
 
@@ -169,6 +210,31 @@ const TechStack = () => {
   return (
     <div className="techstack">
       <h2> My Techstack</h2>
+
+      {/* Skills Grid Overlay */}
+      <div className="ts-skills-overlay">
+        <div className="ts-skills-grid">
+          {skillCategories.map((category, idx) => (
+            <div
+              className="ts-skill-card"
+              key={idx}
+              style={{ animationDelay: `${idx * 0.1}s` }}
+            >
+              <div className="ts-card-header">
+                <span className="ts-card-icon">{category.icon}</span>
+                <h3>{category.title}</h3>
+              </div>
+              <div className="ts-card-tags">
+                {category.skills.map((skill, sIdx) => (
+                  <span className="ts-tag" key={sIdx}>
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
 
       <Canvas
         shadows

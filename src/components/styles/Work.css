@@ -107,6 +107,38 @@
   font-size: 15px;
 }
 
+.project-github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, rgba(94, 234, 212, 0.1), rgba(34, 211, 238, 0.05));
+  border: 1px solid rgba(94, 234, 212, 0.3);
+  border-radius: 8px;
+  color: var(--accentColor);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.project-github-link:hover {
+  background: rgba(94, 234, 212, 0.15);
+  border-color: var(--accentColor);
+  box-shadow: 0 0 20px rgba(94, 234, 212, 0.15);
+  transform: translateY(-2px);
+  color: var(--accentColor);
+}
+
+.project-icon {
+  display: block;
+  font-size: 36px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
 .carousel-image-wrapper {
   flex: 1;
   display: flex;

@@ -6,7 +6,7 @@ const Career = () => {
       <div className="career-container">
         <h2>
           My career <span>&</span>
-          <br /> experience
+          <br />experience
         </h2>
         <div className="career-info">
           <div className="career-timeline">
@@ -15,58 +15,50 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Co-Founder</h4>
-                <h5>CallHQ.ai</h5>
+                <h4>Data Analyst Trainee</h4>
+                <h5>AIAdventure</h5>
               </div>
               <h3>NOW</h3>
             </div>
             <p>
-              Building CallHQ.ai, a voice AI platform for
-              automating customer calls, support, and conversions.
+              Analyzing real-time project datasets and contributing insights that
+              help improve decision-making across teams. Built data cleaning
+              scripts in Python, reducing manual work by 20%+. Developed visual
+              dashboards to monitor user metrics and business performance.
+              Working with mentors on mini end-to-end analytics projects
+              including data extraction, transformation, and visualization.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Adobe</h4>
-                <h5>6+ years · Noida</h5>
+                <h4>Python Automation Intern</h4>
+                <h5>Adisoft Technologies</h5>
               </div>
-              <h3>2017–24</h3>
+              <h3>JUN–JUL 2025</h3>
             </div>
             <p>
-              Senior Lead Software Engineer (Feb 2024 – May 2024). Lead Software
-              Engineer (Feb 2021 – Feb 2024). Software Engineer II (Dec 2017 –
-              Feb 2021): internationalization, globalization, and localization for
-              Adobe Technical Communication Suite; functional and linguistic testing
-              strategy; in-house tooling; collaboration with product and engineering
-              for high-quality localized releases.
+              Built a Python-driven integration system for a Laser Marking
+              Machine, enabling seamless PC-to-machine communication via
+              Serial/Modbus/SDK. Developed high-reliability automation scripts to
+              send marking commands, control coordinates, trigger operations, and
+              process machine feedback. Created operator-friendly tools for
+              uploading text, QR/serial data, and initiating marking cycles.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Consultant</h4>
-                <h5>Genpact Headstrong </h5>
+                <h4>B.Tech AI & Data Science</h4>
+                <h5>AISSMS IOIT, Pune</h5>
               </div>
-              <h3>2016–17</h3>
+              <h3>2023–2027</h3>
             </div>
             <p>
-              Sep 2016 – Nov 2017. Developed and maintained WCF services consumed
-              by the UI; deployment support across environments; NUnit tests and
-              coverage; bug fixes from QA and users; database work.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Sf Engineer</h4>
-                <h5>Infogain</h5>
-              </div>
-              <h3>2013-16</h3>
-            </div>
-            <p>
-              Software engineering across enterprise projects, contributing to
-              design, development, and delivery of business applications.
+              Pursuing Bachelor of Technology in Artificial Intelligence & Data
+              Science. Relevant coursework: Data Structures & Algorithms,
+              Database Management, Object-Oriented Programming, Computer
+              Networks, Machine Learning, Deep Learning, Theory of Computation.
             </p>
           </div>
         </div>

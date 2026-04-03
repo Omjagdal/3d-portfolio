@@ -35,9 +35,35 @@
   margin-bottom: 20px;
 }
 
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-icon {
+  color: var(--accentColor);
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.contact-detail a {
+  transition: color 0.3s ease;
+}
+
+.contact-detail a:hover {
+  color: var(--accentColor);
+}
+
 a.contact-social {
   font-size: 25px;
   border-bottom: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+a.contact-social:hover {
+  border-color: var(--accentColor);
+  padding-left: 5px;
 }
 
 .contact-box h2 {

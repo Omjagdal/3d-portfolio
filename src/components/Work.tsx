@@ -2,35 +2,26 @@ import { useState, useCallback } from "react";
 import "./styles/Work.css";
 import WorkImage from "./WorkImage";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
+import { FaGithub } from "react-icons/fa6";
 
 const projects = [
   {
-    title: "CallHQ",
-    category: "Voice AI Calling Platform",
-    tools: "Voice AI, Calling Automation, CRM Integrations",
-    image: "/images/callhq.png",
-    link: "https://callhq.ai",
+    title: "ShivaAI Medical Chatbot",
+    category: "AI-Powered Healthcare Assistant",
+    tools: "LangChain, LangGraph, RAG, Vector Search, Multi-Agent Workflow",
+    image: "/images/shivaai_chatbot.png",
+    link: "https://shivaai-medical-health-chatbot.vercel.app",
+    github: "https://github.com/Omjagdal/shivaai-medical-health-chatbot.git",
+    icon: "🧠",
   },
   {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
-    image: "/images/whatsapp.png",
-    link: "https://whatsapp.callhq.ai",
-  },
-  {
-    title: "Broki",
-    category: "Real Estate Platform for FnB Industry",
-    tools: "Property Discovery, Lead Management, Marketplace Workflows",
-    image: "/images/broki.png",
-    link: "https://broki.in",
-  },
-  {
-    title: "Orrdr.com",
-    category: "Ecommerce Platform and Mobile App",
-    tools: "Ecommerce, Mobile Experience, Order Management",
-    image: "/images/orrdr.png",
-    link: "https://orrdr.com",
+    title: "ADAS Perception System",
+    category: "Real-Time Lane & Vehicle Detection",
+    tools: "YOLO, ByteTrack, UltraFast Lane Model, TTC Collision Warning",
+    image: "/images/adas_detection.png",
+    link: "https://github.com/Omjagdal",
+    github: "https://github.com/Omjagdal/Real-time-lane-Vehicle-Perception-system-for-ADAS-Applications.git",
+    icon: "🚗",
   },
 ];
 
@@ -64,7 +55,7 @@ const Work = () => {
     <div className="work-section" id="work">
       <div className="work-container section-container">
         <h2>
-          My <span>Work</span>
+          My <span>Projects</span>
         </h2>
 
         <div className="carousel-wrapper">
@@ -99,6 +90,7 @@ const Work = () => {
                   <div className="carousel-content">
                     <div className="carousel-info">
                       <div className="carousel-number">
+                        <span className="project-icon">{project.icon}</span>
                         <h3>0{index + 1}</h3>
                       </div>
                       <div className="carousel-details">
@@ -107,9 +99,20 @@ const Work = () => {
                           {project.category}
                         </p>
                         <div className="carousel-tools">
-                          <span className="tools-label">Tools & Features</span>
+                          <span className="tools-label">Tech Stack</span>
                           <p>{project.tools}</p>
                         </div>
+                        {project.github && (
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="project-github-link"
+                            data-cursor="disable"
+                          >
+                            <FaGithub /> View on GitHub
+                          </a>
+                        )}
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">
