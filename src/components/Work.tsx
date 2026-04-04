@@ -19,7 +19,7 @@ const projects = [
     category: "Real-Time Lane & Vehicle Detection",
     tools: "YOLO, ByteTrack, UltraFast Lane Model, TTC Collision Warning",
     image: "/images/adas_detection.png",
-    link: "https://github.com/Omjagdal",
+    link: "https://real-time-lane-vehicle-perception-s.vercel.app",
     github: "https://github.com/Omjagdal/Real-time-lane-Vehicle-Perception-system-for-ADAS-Applications.git",
     icon: "🚗",
   },
