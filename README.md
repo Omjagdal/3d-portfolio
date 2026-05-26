@@ -183,7 +183,3 @@ Enthusiastic AI & Data Science student with hands-on experience in **Machine Lea
 This project is licensed under the MIT License.
 
 ---
-
-## ⭐ Support
-
-If you like this project, give it a ⭐ on GitHub!
